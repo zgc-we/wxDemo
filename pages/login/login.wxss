@@ -3,3 +3,7 @@
   margin: 30px;
   text-align: center;
 }
+.images{
+  width: 200rpx;
+  height: 200rpx;
+}

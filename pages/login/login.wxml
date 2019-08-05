@@ -1,1 +1,9 @@
-<view class="intro">欢迎使用代码片段，可在控制台查看代码片段的说明和文档</view>
+<view class="intro">
+  <image class="images" src="/images/avatar/4.png"></image>
+  <view><text>Hello ludan</text></view>
+  <view>
+    <text>
+      这是个文本
+    </text>
+  </view>
+</view>
