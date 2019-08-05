@@ -10,10 +10,44 @@
     indicator-color="#fff"
     indicator-active-color="#03ccdd"
   >
-    <block wx:for="{{imgUrls}}">
+    <block wx:for="{{imgUrls}}" wx:key="i">
       <swiper-item>
         <image src="{{item}}" class="slide-image swiper_img"/>
       </swiper-item>
     </block>
   </swiper>
+
+
+  <view class="postConter">
+    <view class="post_author_name">
+      <image src="/images/avatar/1.png" class="post_author_img"></image>
+      <text style="line-height: 100rpx;">Nov 25 2016</text>
+    </view>
+    <text class="cart_title">正是虾肥蟹壮时</text>
+    <image class="cart_img" src="/images/post/crab.png"></image>
+    <text class="cart_con">整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬</text>
+    <view class="cart_footer">
+      <image class="footer_img" src="/images/icon/chat.png"></image>
+      <text style="margin-right: 20rpx;">92</text>
+      <image class="footer_img" src="/images/icon/view.png"></image>
+      <text>65</text>
+    </view>
+  </view>
+
+   <view class="postConter">
+    <view class="post_author_name">
+      <image src="/images/avatar/1.png" class="post_author_img"></image>
+      <text style="line-height: 100rpx;">Nov 25 2016</text>
+    </view>
+    <text class="cart_title">正是虾肥蟹壮时</text>
+    <image class="cart_img" src="/images/post/crab.png"></image>
+    <text class="cart_con">整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬</text>
+    <view class="cart_footer">
+      <image class="footer_img" src="/images/icon/chat.png"></image>
+      <text style="margin-right: 20rpx;">92</text>
+      <image class="footer_img" src="/images/icon/view.png"></image>
+      <text>65</text>
+    </view>
+  </view>
+
 </view>
