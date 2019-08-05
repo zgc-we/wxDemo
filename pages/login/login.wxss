@@ -1,9 +1,30 @@
 /* pages/login/login.wxss */
 .intro {
-  margin: 30px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+page{
+  background: #b3d4db;
 }
 .images{
+  margin-top: 160rpx;
   width: 200rpx;
   height: 200rpx;
+}
+.user_name{
+  font-size: 32rpx;
+  font-weight: 600;
+  margin: 60rpx 0;
+}
+.btn_box{
+  border: 1px solid blue;
+  width: 250rpx;
+  height: 80rpx;
+  border-radius: 5rpx;
+  text-align: center; 
+  font-size: 22rpx;
+  font-weight: 600;
+  line-height: 80rpx; 
+  margin-top: 120rpx;
 }

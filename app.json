@@ -5,8 +5,8 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ddd",
-    "navigationBarTitleText": "温馨提示",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

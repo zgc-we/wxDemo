@@ -1,9 +1,7 @@
 <view class="intro">
   <image class="images" src="/images/avatar/4.png"></image>
-  <view><text>Hello ludan</text></view>
-  <view>
-    <text>
-      这是个文本
-    </text>
+  <view class="user_name"><text>Hello， 七月</text></view>
+  <view class="btn_box">
+    开启小程序之旅
   </view>
 </view>
