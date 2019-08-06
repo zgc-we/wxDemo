@@ -11,7 +11,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let _list = [
+      {
+        titleImg: '/images/avatar/1.png',
+        contentImg: '/images/post/crab.png',
+        titleTime: 'Nov 25 2016',
+        header: '正是虾肥蟹壮时',
+        content:'整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬',
+        star: '92',
+        seePeople: '65'
+    },{
+        titleImg: '/images/avatar/1.png',
+        contentImg: '/images/post/crab.png',
+        titleTime: 'Nov 25 2016',
+        header: '正是虾肥蟹壮时',
+        content: '整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬',
+        star: '92',
+        seePeople: '65'
+    }]
+    this.setData({list:_list})
   },
 
   /**

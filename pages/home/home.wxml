@@ -17,37 +17,23 @@
     </block>
   </swiper>
 
+  <block>
+    <view class="postConter">
+      <view class="post_author_name">
+        <image src="{{list[0]['titleImg']}}" class="post_author_img"></image>
+        <text style="line-height: 100rpx;">{{list[0]['titleTime']}}</text>
+      </view>
+      <text class="cart_title">{{list[0]['header']}}</text>
+      <image class="cart_img" src="{{list[0]['contentImg']}}"></image> 
+      <text class="cart_con">{{list[0]['content']}}</text>
+      <view class="cart_footer">
+        <image class="footer_img" src="/images/icon/chat.png"></image>
+        <text style="margin-right: 20rpx;">{{list[0]['star']}}</text>
+        <image class="footer_img" src="/images/icon/view.png"></image>
+        <text>{{list[0]['seePeople']}}</text>
+      </view>
+    </view>
+  </block>
 
-  <view class="postConter">
-    <view class="post_author_name">
-      <image src="/images/avatar/1.png" class="post_author_img"></image>
-      <text style="line-height: 100rpx;">Nov 25 2016</text>
-    </view>
-    <text class="cart_title">正是虾肥蟹壮时</text>
-    <image class="cart_img" src="/images/post/crab.png"></image>
-    <text class="cart_con">整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬</text>
-    <view class="cart_footer">
-      <image class="footer_img" src="/images/icon/chat.png"></image>
-      <text style="margin-right: 20rpx;">92</text>
-      <image class="footer_img" src="/images/icon/view.png"></image>
-      <text>65</text>
-    </view>
-  </view>
-
-   <view class="postConter">
-    <view class="post_author_name">
-      <image src="/images/avatar/1.png" class="post_author_img"></image>
-      <text style="line-height: 100rpx;">Nov 25 2016</text>
-    </view>
-    <text class="cart_title">正是虾肥蟹壮时</text>
-    <image class="cart_img" src="/images/post/crab.png"></image>
-    <text class="cart_con">整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬</text>
-    <view class="cart_footer">
-      <image class="footer_img" src="/images/icon/chat.png"></image>
-      <text style="margin-right: 20rpx;">92</text>
-      <image class="footer_img" src="/images/icon/view.png"></image>
-      <text>65</text>
-    </view>
-  </view>
 
 </view>
