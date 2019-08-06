@@ -1,7 +1,7 @@
 <view class="intro">
   <image class="images" src="/images/avatar/4.png"></image>
   <view class="user_name"><text>Hello， 七月</text></view>
-  <view class="btn_box">
+  <view class="btn_box" bindtap="onTap">
     开启小程序之旅
   </view>
 </view>

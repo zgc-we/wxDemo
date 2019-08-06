@@ -17,23 +17,21 @@
     </block>
   </swiper>
 
-  <block>
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="index">
     <view class="postConter">
       <view class="post_author_name">
-        <image src="{{list[0]['titleImg']}}" class="post_author_img"></image>
-        <text style="line-height: 100rpx;">{{list[0]['titleTime']}}</text>
+        <image src="{{item.titleImg}}" class="post_author_img"></image>
+        <text style="line-height: 100rpx;">{{item.titleContent}}</text>
       </view>
-      <text class="cart_title">{{list[0]['header']}}</text>
-      <image class="cart_img" src="{{list[0]['contentImg']}}"></image> 
-      <text class="cart_con">{{list[0]['content']}}</text>
+      <text class="cart_title">{{item.header}}</text>
+      <image class="cart_img" src="{{item.headerImg}}"></image>
+      <text class="cart_con">{{item.content}}</text>
       <view class="cart_footer">
         <image class="footer_img" src="/images/icon/chat.png"></image>
-        <text style="margin-right: 20rpx;">{{list[0]['star']}}</text>
+        <text style="margin-right: 20rpx;">{{item.star}}</text>
         <image class="footer_img" src="/images/icon/view.png"></image>
-        <text>{{list[0]['seePeople']}}</text>
+        <text>{{item.seePeople}}</text>
       </view>
     </view>
   </block>
-
-
 </view>

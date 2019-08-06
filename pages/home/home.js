@@ -14,21 +14,23 @@ Page({
     let _list = [
       {
         titleImg: '/images/avatar/1.png',
-        contentImg: '/images/post/crab.png',
-        titleTime: 'Nov 25 2016',
+        titleContent: 'Nov 25 2016',
+        header:'正是虾肥蟹壮时',
+        headerImg: '/images/post/crab.png',
+        content: '整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂',
+        star: '93',
+        seePeople:'65'
+      },
+      {
+        titleImg: '/images/avatar/2.png',
+        titleContent: 'Nov 25 2016',
         header: '正是虾肥蟹壮时',
-        content:'整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬',
-        star: '92',
+        headerImg: '/images/post/cat.png',
+        content: '整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂',
+        star: '93',
         seePeople: '65'
-    },{
-        titleImg: '/images/avatar/1.png',
-        contentImg: '/images/post/crab.png',
-        titleTime: 'Nov 25 2016',
-        header: '正是虾肥蟹壮时',
-        content: '整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬整阿道夫阿斯蒂芬的说法法术打击发的说法阿斯蒂芬的说法二萨法发斯蒂芬',
-        star: '92',
-        seePeople: '65'
-    }]
+      }
+    ];
     this.setData({list:_list})
   },
 
@@ -36,7 +38,6 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
