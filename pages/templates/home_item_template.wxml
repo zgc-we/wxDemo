@@ -1,0 +1,17 @@
+<template name="homeListItem">
+  <view class="postConter">
+    <view class="post_author_name">
+      <image src="{{item.avatar}}" class="post_author_img"></image>
+      <text style="line-height: 100rpx;">{{item.date}}</text>
+    </view>
+    <text class="cart_title">{{item.title}}</text>
+    <image class="cart_img" src="{{item.headImgSrc}}"></image>
+    <text class="cart_con">{{item.content}}</text>
+    <view class="cart_footer">
+      <image class="footer_img" src="/images/icon/chat.png"></image>
+      <text style="margin-right: 20rpx;">{{item.collection}}</text>
+      <image class="footer_img" src="/images/icon/view.png"></image>
+      <text>{{item.reading}}</text>
+    </view>
+  </view>
+</template>
