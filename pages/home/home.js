@@ -11,5 +11,11 @@ Page({
   },
   onLoad: function (options) {
     this.setData({ list: postList})
+  },
+  handleClick: function(event){
+    let _id = event['currentTarget']['dataset']['itemId'];
+    wx.navigateTo({
+      url: `../home_detail/home_detail?id=${_id}`,
+    })
   }
 })

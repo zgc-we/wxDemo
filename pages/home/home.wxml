@@ -20,6 +20,8 @@
   </swiper>
 
   <block wx:for="{{list}}" wx:for-item="item" wx:key="index">
-    <template is="homeListItem" data="{{item}}"/>
+    <view bindtap="handleClick" data-item-id="{{item.postId}}">
+      <template is="homeListItem" data="{{item}}"/>
+    </view>
   </block>
 </view>
