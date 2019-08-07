@@ -1,7 +1,7 @@
 // pages/login/login.js
 Page({
   onTap: function() {
-    wx.navigateTo({
+    wx.switchTab({
       url: '../home/home',
     })
     // wx.redirectTo({

@@ -10,5 +10,31 @@
     "navigationBarTitleText": "",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index_select.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/icon/course.png",
+        "selectedIconPath": "images/icon/course_select.png",
+        "pagePath": "pages/home/home",
+        "text": "学习"
+      },
+      {
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my_select.png",
+        "pagePath": "pages/home/home",
+        "text": "我"
+      }
+    ]
+  },
   "sitemapLocation": "sitemap.json"
 }
