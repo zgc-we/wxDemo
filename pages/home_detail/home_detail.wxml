@@ -7,13 +7,12 @@
     <text class="author">{{postData.author}}</text>
     <text class="const-text">发表于</text>
     <text class="date">{{postData.dateTime}}</text>
-  </view>
+  </view> 
   <text class="title">{{postData.title}}</text>
   <view class="tool">
     <view class="circle-img">
-      <!-- <image wx:if="{{collected}}" catchtap="onColletionTap" src="/images/icon/collection.png"></image>
-      <image wx:else catchtap="onColletionTap" src="/images/icon/collection-anti.png"></image> -->
-      <image catchtap="onColletionTap" src="/images/icon/collection.png"></image>
+      <image wx:if="{{collected}}" catchtap="onColletionTap" data-id="{{postData.postId}}" src="/images/icon/collection.png"></image>
+      <image wx:else catchtap="onColletionTap" data-id="{{postData.postId}}" src="/images/icon/collection-anti.png"></image>
       <image catchtap="onShareTap" class="share-img" src="/images/icon/share.png"></image>
     </view>
     <view class="horizon"></view>
