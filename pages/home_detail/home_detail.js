@@ -34,7 +34,20 @@ Page({
       wx.setStorageSync('collected', item);
     }
     this.setData({ collected: !this.data.collected})
-    
-
+  },
+  onShareTap: function(options){
+    let _id = options['currentTarget']['dataset']['id'];
+    let _arr = ["分享到QQ",'分享到好友','分享朋友圈',"分享到微博"];
+    wx.showActionSheet({
+      itemList: _arr,
+      success:function(res) {
+        console.log(res, '-----res-----')
+        wx.showModal({
+          title: `用户${_arr[res.tapIndex]}`,
+          content: `用户是否取消？现在还没有分享功能，什么时候能分享再说。`,
+        })
+        console.log(res, '---res---')
+      }
+    })
   }
 })
