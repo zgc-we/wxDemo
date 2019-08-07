@@ -7,6 +7,6 @@ Page({
   },
   onLoad: function (options) {
     let clickItem = postList.find(k => k['postId'] == options['id']);
-    console.log(clickItem, '----clickItem---')
+    this.setData({postData: clickItem});
   }
 })

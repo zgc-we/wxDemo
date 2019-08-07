@@ -17,5 +17,8 @@ Page({
     wx.navigateTo({
       url: `../home_detail/home_detail?id=${_id}`,
     })
+  },
+  handleSwiper: function(event) {
+    conosle.log(event)
   }
 })
