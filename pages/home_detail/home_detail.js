@@ -4,6 +4,7 @@ import { postList } from '../../data/posts-data.js';
 Page({
   data: {
     collected:false,
+    musicVisible: false,
   },
   onLoad: function (options) {
     const _id = options['id'];
@@ -41,13 +42,27 @@ Page({
     wx.showActionSheet({
       itemList: _arr,
       success:function(res) {
-        console.log(res, '-----res-----')
         wx.showModal({
           title: `用户${_arr[res.tapIndex]}`,
           content: `用户是否取消？现在还没有分享功能，什么时候能分享再说。`,
         })
-        console.log(res, '---res---')
       }
     })
+  },
+  onMusicTap: function(event) {
+    let musicId = event.currentTarget.dataset.musicId;
+    let item = postList[musicId]['music'];
+    let _type = this.data.musicVisible;
+    if (!_type){
+      wx.playBackgroundAudio({
+        dataUrl: item['url'],
+        title: item['title'],
+        coverImgUrl: item['coverImg']
+      })
+      this.setData({musicVisible: !this.data.musicVisible})
+    } else {
+      wx.pauseBackgroundAudio()
+      this.setData({ musicVisible: !this.data.musicVisible })
+    }
   }
 })

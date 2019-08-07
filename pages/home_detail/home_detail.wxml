@@ -1,7 +1,7 @@
 <!--pages/home_detail/home_detail.wxml-->
 <view class="container">
   <image class="head-image" src="{{postData.music.coverImg}}"></image>
-  <image catchtap="onMusicTap" class="audio" src="{{'/images/music/music-start.png'}}"></image>
+  <image catchtap="onMusicTap" data-music-id="{{postData.postId}}" class="audio" src="{{!musicVisible ? '/images/music/music-start.png':'/images/music/music-stop.png'}}"></image>
   <view class="author-date">
     <image class="avatar" src="{{postData.avatar}}"></image>
     <text class="author">{{postData.author}}</text>
