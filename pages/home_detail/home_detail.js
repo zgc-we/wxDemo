@@ -22,11 +22,19 @@ Page({
     let storageItem = wx.getStorageSync('collected');
     // 采用 locastorage 进行存储
     if (storageItem){
+      // 提示功能
+      if (!storageItem[_id]){
+        wx.showToast({title: '收藏文章成功',icon: 'success',duration: 2000})
+      } else {
+        wx.showToast({title: '取消收藏',icon: 'clear',duration: 2000})
+      }
       wx.setStorageSync('collected', { ...storageItem, [_id]: !storageItem[_id]})
     } else {
       let item = {'0': false,'1': false,'2': false,'3': false,'4': false,'5': false};
-      wx.setStorageSync('collected', item)
+      wx.setStorageSync('collected', item);
     }
     this.setData({ collected: !this.data.collected})
+    
+
   }
 })
