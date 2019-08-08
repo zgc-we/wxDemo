@@ -17,6 +17,22 @@ Page({
         collected: postColleted[_id],
       })
     }
+    // 音乐控制器控制音乐播放
+    var _this = this;
+    wx.onBackgroundAudioPlay(function() {
+      _this.setData({ musicVisible: true});
+      let item = postList[_id]['music'];
+      wx.playBackgroundAudio({
+        dataUrl: item['url'],
+        title: item['title'],
+        coverImgUrl: item['coverImg']
+      })
+    })
+    // 音乐控制器控制音乐停止播放
+    wx.onBackgroundAudioStop(function() {
+      _this.setData({musicVisible: false});
+      wx.pauseBackgroundAudio()
+    })
   },
   onColletionTap: function(options) {
     let _id = options['currentTarget']['dataset']['id'];
@@ -59,10 +75,15 @@ Page({
         title: item['title'],
         coverImgUrl: item['coverImg']
       })
-      this.setData({musicVisible: !this.data.musicVisible})
+      this.setData({musicVisible: true})
     } else {
       wx.pauseBackgroundAudio()
-      this.setData({ musicVisible: !this.data.musicVisible })
+      this.setData({ musicVisible: false })
     }
-  }
+  },
+  // 生命周期
+  onUnload: function () {
+    wx.pauseBackgroundAudio()
+    this.setData({ musicVisible: false })
+  },
 })

@@ -2,7 +2,12 @@
   "pages": [
     "pages/home/home",
     "pages/login/login",
-    "pages/home_detail/home_detail"
+    "pages/home_detail/home_detail",
+    "pages/demo/demo"
+  ],
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
   ],
   "window": {
     "backgroundTextStyle": "light",
