@@ -3,6 +3,6 @@ App({
 
   },
   globalData: {
-    doubanBase: "https://api.douban.com",
+    doubanBase: "https://douban.uieee.com",
   }
 })
