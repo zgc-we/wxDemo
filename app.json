@@ -3,7 +3,7 @@
     "pages/login/login",
     "pages/home/home",
     "pages/home_detail/home_detail",
-    "pages/demo/demo"
+    "pages/movies/movies"
   ],
   "requiredBackgroundModes": [
     "audio",
@@ -22,22 +22,22 @@
     "backgroundColor": "#fff",
     "list": [
       {
-        "iconPath": "images/icon/index.png",
-        "selectedIconPath": "images/icon/index_select.png",
+        "iconPath": "images/tab/ciwei.png",
+        "selectedIconPath": "images/tab/ciwei_hl.png",
         "pagePath": "pages/home/home",
         "text": "首页"
       },
       {
-        "iconPath": "images/icon/course.png",
-        "selectedIconPath": "images/icon/course_select.png",
-        "pagePath": "pages/home/home",
-        "text": "学习"
+        "iconPath": "images/tab/dianying.png",
+        "selectedIconPath": "images/tab/dianying_hl.png",
+        "pagePath": "pages/movies/movies",
+        "text": "电影"
       },
       {
-        "iconPath": "images/icon/my.png",
-        "selectedIconPath": "images/icon/my_select.png",
+        "iconPath": "images/tab/yuedu.png",
+        "selectedIconPath": "images/tab/yuedu_hl.png",
         "pagePath": "pages/home/home",
-        "text": "我"
+        "text": "阅读"
       }
     ]
   },
