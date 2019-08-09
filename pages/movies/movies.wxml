@@ -8,6 +8,7 @@
   bindblur="onBindBlur"/>
   <image wx:if="{{searchPanelShow}}" src="/images/icon/xx.png" class="xx-img" bindtap="onCancelImgTap"></image>
 </view>
+
 <view class="container" wx:if="{{containerShow}}">
   <view class="movies-template">
     <template is="movieListTemplate" data="{{...inTheaters}}" />

@@ -1,11 +1,9 @@
 // pages/movies/movies.js
 var util = require('../../utils/util.js')
 var app = getApp();
+import FetchItem from '../../utils/request.js';
 
 Page({
-  // RESTFul API JSON
-  // SOAP XML
-  //粒度 不是 力度
   data: {
     inTheaters: {},
     comingSoon: {},
@@ -19,7 +17,6 @@ Page({
     var inTheatersUrl = `${app.globalData.doubanBase}/v2/movie/in_theaters?start=0&count=10`;
     var comingSoonUrl = `${app.globalData.doubanBase}/v2/movie/coming_soon`;
     var top250Url = `${app.globalData.doubanBase}/v2/movie/top250?start=0&count=10`;
-
     this.getMovieListData(inTheatersUrl, "inTheaters", "正在热映");
     this.getMovieListData(comingSoonUrl, "comingSoon", "即将上映");
     this.getMovieListData(top250Url, "top250", "豆瓣Top250");
@@ -39,21 +36,9 @@ Page({
     })
   },
 
-  getMovieListData: function(url, settedKey, categoryTitle) {
-    var that = this;
-    wx.request({
-      url: url,
-      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-      header: {
-        "Content-Type": "json"
-      },
-      success: function(res) {
-        that.processDoubanData(res.data, settedKey, categoryTitle)
-      },
-      fail: function(error) {
-        // fail
-        console.log(error)
-      }
+  getMovieListData: function (url, settedKey, categoryTitle) {
+    FetchItem.WxGet(url).then(res => {
+      this.processDoubanData(res.data, settedKey, categoryTitle)
     })
   },
 
@@ -79,7 +64,7 @@ Page({
     this.getMovieListData(searchUrl, "searchResult", "");
   },
 
-  processDoubanData: function(moviesDouban, settedKey, categoryTitle) {
+  processDoubanData: function (moviesDouban, settedKey, categoryTitle) {
     var movies = [];
     for (var idx in moviesDouban.subjects) {
       var subject = moviesDouban.subjects[idx];
