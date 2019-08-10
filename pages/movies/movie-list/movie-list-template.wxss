@@ -12,8 +12,11 @@
 
 .movie-head {
   padding: 30rpx 20rpx 22rpx;
-  /*display:flex;
-  flex-direction: row;
+  display:flex;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  /* justify-content: space-between; */
+  /* flex-direction: row;
   justify-content:space-between;*/
 }
 

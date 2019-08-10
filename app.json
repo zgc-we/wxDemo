@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/movies/movies",
     "pages/login/login",
     "pages/home/home",
-    "pages/home_detail/home_detail",
-    "pages/movies/movies"
+    "pages/home_detail/home_detail"
   ],
   "requiredBackgroundModes": [
     "audio",
