@@ -59,9 +59,9 @@ Page({
   },
 
   onBindBlur: function(event) { // input失去焦
-    console.log(event, '---event---')
     var text = event.detail.value;
     var searchUrl = app.globalData.doubanBase + "/v2/movie/search?q=" + text;
+    console.log(searchUrl, '---searchUrl---')
     this.getMovieListData(searchUrl, "searchResult", "");
   },
 
