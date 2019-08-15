@@ -11,6 +11,7 @@ Page({
   },
   onLoad: function (options) {
     var category = options.category;
+    console.log(category, '----category111---')
     this.data.navigateTitle = category;
     var dataUrl = "";
     switch (category) {
