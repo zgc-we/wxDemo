@@ -19,5 +19,5 @@ git clone  https://github.com/zgc-we/wxDemo.git
 ```
 ## 希望您的fork/start
 ```
-在此预祝您学习愉快
+在此预祝您学习愉快，有兴趣的可以关注的 博客园：https://www.cnblogs.com/GongYaLei/
 ```
