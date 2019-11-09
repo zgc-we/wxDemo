@@ -24,6 +24,7 @@ Page({
 
   onMoreTap: function(event) {
     var category = event.currentTarget.dataset.category;
+    console.log(category, '------category----')
     wx.navigateTo({
       url: "more-movie/more-movie?category=" + category
     })
@@ -58,9 +59,9 @@ Page({
   },
 
   onBindBlur: function(event) { // input失去焦
-    console.log(event, '---event---')
     var text = event.detail.value;
     var searchUrl = app.globalData.doubanBase + "/v2/movie/search?q=" + text;
+    console.log(searchUrl, '---searchUrl---')
     this.getMovieListData(searchUrl, "searchResult", "");
   },
 
